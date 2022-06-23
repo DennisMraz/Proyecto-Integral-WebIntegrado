@@ -15,10 +15,11 @@ public class ClienteController {
     @Autowired
     private IClienteService clienteService;
 
-    @RequestMapping("/") // Raiz de cliente
+    @RequestMapping("/") 
     public String inicio(Model model) {
         Cliente objCliente = new Cliente();
         model.addAttribute("cliente", objCliente);
+        model.addAttribute("listaClientes", clienteService.cargarClientes()); // Lista de clientes
         return "cliente/inicio";
     }
 
