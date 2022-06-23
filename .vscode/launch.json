@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-IntegralApplication<integral>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.proyecto.integral.IntegralApplication",
+            "projectName": "integral",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
