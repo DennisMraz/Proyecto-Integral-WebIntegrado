@@ -22,10 +22,10 @@ public class CategoriaServicesImp implements ICategoriaService {
     @Override
     public List<Categoria> cargarCategorias() {
       //  return (List<Categoria>) categoriaDAO.findAll(); //Se castea a List<Categoria> para que se pueda usar el metodo findAll()
-       // return (List<Categoria>) categoriaDAO.findByOrderByNombre(); //Se ordena por nombre
+        return (List<Categoria>) categoriaDAO.findByOrderByNombre(); //Se ordena por nombre
         //return (List<Categoria>) categoriaDAO.findByNombre(" "); //Se busca por nombre
         //return (List<Categoria>) categoriaDAO.findByIdLessThan(5L); //Se busca por id menor a 5
-        return (List<Categoria>) categoriaDAO.pruebaQuery("A%"); //Se busca con query native
+       // return (List<Categoria>) categoriaDAO.pruebaQuery("A%"); //Se busca con query native
     }
 
     @Override
