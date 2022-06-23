@@ -1,6 +1,5 @@
 package com.proyecto.integral.model.service;
 import java.util.List;
-
 import com.proyecto.integral.model.entidad.Categoria;
 
 public interface ICategoriaService {
