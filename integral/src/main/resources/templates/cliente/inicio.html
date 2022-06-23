@@ -73,7 +73,7 @@
                                                 </a>
                                             </td>
                                             <td class="text-center">
-                                                <a class="btn btn-danger"  onclick="return confirm('¿Desea eliminar la categoría?')">
+                                                <a class="btn btn-danger" th:href="@{/cliente/eliminar/}+${item.id}" onclick="return confirm('¿Desea eliminar la categoría?')">
                                                     <i class="fa-solid fa-trash-alt"></i> Eliminar
                                                 </a>
                                             </td>

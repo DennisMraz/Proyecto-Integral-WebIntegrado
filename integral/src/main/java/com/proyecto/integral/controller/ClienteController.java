@@ -39,4 +39,11 @@ public class ClienteController {
         model.addAttribute("listaClientes", clienteService.cargarClientes());
         return "cliente/inicio";
     }
+
+    //Eliminar CLiente
+    @RequestMapping("/eliminar/{id}")
+    public String eliminar(@PathVariable(value = "id") Long id) {
+        clienteService.eliminarCliente(id);
+        return "redirect:/cliente/";
+    }
 }
